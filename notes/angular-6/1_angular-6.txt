@@ -1,0 +1,82 @@
+Angular Technologies:
+
+Angular
+JavaScript / TypeScript
+Angular CLI
+Reactive programming, RxJS, Observables, operators
+Jasmine, karma
+Redux, ngRx
+
+
+Content:
+1. intro / setting Up / Components
+2. Templates / Data Binding / Event Handling
+3. Services / DI / Rest API calls
+4. Routing / Wrap up
+
+
+
+1.2 Component Based Model
+Understand the component-based mental model that's helpful when thinking about Angular application development.
+
+Example:
+
+if we need to display time on web page
+we write html and embed JS to display the time. This is how we broke it down to achieve the display of time.
+But in Angualar we will not have implicit divide like html or JS separate instead it will take Component based approach.
+
+Like., Header component, side bar component, footer and body
+
+
+<header-section></<header-section>
+<main-section></<main-section>
+<side-bar></<side-bar>
+<footer-section></<footer-section>\
+
+each section can have sub-components. like main section can have summary and details sub-component.
+Now in Angular application there will be Root Component.
+
+1.3 Setting Up
+Let's setup the development environment to run Angular applications. This includes NodeJS, the editor (Visual Studio Code) and the Angular CLI.
+
+Angular CLI - Command-Line-Interface:
+
+There are bunch things need to be done to kick start Angular application
+We need more than one file to be organized to start Angular app. So need all the bolier code.
+
+Angular CLI is a utility to generate required files to start Angular application. Like bare bones project.
+To install Angular CLI, use npm cmd
+
+npm install @angular/cli -g
+
+note: This is called a 'scoped' package name. These names are of the format @group/package.
+
+to see Angular version installed,
+ng version
+
+
+1.4 Creating and running a project
+Learn how to use the Angular CLI's `ng new` command to create a new Angular project. Then use the `ng serve` command to run the project and access it in a browser.
+
+
+np new first-project
+
+cd first-project
+configure the new project into editor
+
+in cmd -> ng serve
+
+ng serve - it create http server and host the project you have, then you can access that localhost url and loads the page. then we can make changes in the page.
+
+url i will be displayed in the console
+http://localhost:4200/
+
+
+1.5 Introducing the app component
+Let's examine the root component of teh generated Angular CLI project - the `app` component.
+
+1.6 Creating your first component
+Create a component from scratch using the Angular CLI's `generate` command. Understand what that command does and examine the resulting files.
+
+
+
